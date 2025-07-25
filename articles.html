@@ -11,10 +11,10 @@
   </head>
   <body>
     <div class="wrapper">
-      <header class="_header_l1vu7_2">
+      <header class="_header_fl87c_2">
         <div class="container container_xl">
-          <div class="_wrapper_l1vu7_7" data-header="true">
-            <a class="_logo_l1vu7_35" href="/all-pages">
+          <div class="_wrapper_fl87c_7" data-header="true">
+            <a class="_logo_fl87c_35" href="/all-pages">
               <img src="assets/images/logo_01.svg" alt="logo">
             </a>
             <nav class="_menu_1fwgf_1">
@@ -194,8 +194,47 @@
       </main>
       <footer>
         <div class="container">
-          <div class="_wrapper_ranf6_1">
-            <p class="_text_ranf6_17">Copyright 2024</p>
+          <div class="_wrapper_1d9kz_1">
+            <p class="_text_1d9kz_20">Copyright 2024</p>
+            <button class="button" type="button" data-popup-id="feedback">Обратная связь</button>
+          </div>
+        </div>
+        <div id="feedback" class="popup" data-popup="true">
+          <div class="popup__wrapper" data-popup-wrapper="true">
+            <div class="popup__body popup__body_light popup__body_md" data-popup-body="true">
+              <form class="popup__form">
+                <div class="popup__head">
+                  <h2 class="popup__title title title_md">Обратная связь</h2>
+                  <button class="popup__close" type="button" data-popup-close="true">
+                    <svg>
+                      <use href="/assets/images/icons.svg#cross"></use>
+                    </svg>
+                  </button>
+                </div>
+                <div class="popup__inputs">
+                  <div class="input" data-input="true" data-input-default="true">
+                    <label class="input__wrapper">
+                      <div class="input__group"><span class="input__label">Ваше имя</span>
+                        <input class="input__target" type="text" placeholder="Иван" data-input-target="true">
+                      </div>
+                    </label>
+                  </div>
+                  <div class="input" data-input="true" data-input-default="true">
+                    <label class="input__wrapper">
+                      <div class="input__group"><span class="input__label">Ваш телефон</span>
+                        <input class="input__target" type="tel" placeholder="+375 (    )" data-input-target="true">
+                      </div>
+                    </label>
+                  </div>
+                </div>
+                <div class="popup__footer">
+                  <button class="button" type="submit">Отправить<svg class="button__icon">
+                      <use href="/assets/images/icons.svg#arrow-diagonal"></use>
+                    </svg>
+                  </button>
+                </div>
+              </form>
+            </div>
           </div>
         </div>
       </footer>
